@@ -37,7 +37,8 @@ header {
 
 /* Style the links so that they have the same color even after they have been visited */
 a:visited {
-    color: inherit;
+    /* color: inherit; */
+    color: blue;
 }
 
 /* Identify the proper selector to style ONLY those header elements that are direct children of a card class.  The required styling is the following: 
