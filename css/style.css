@@ -102,13 +102,15 @@ solid 2px border using #45ADAD,
     }
 
     /* Modify the first header (the one not inside main) so that it remains visible at the top of the screen even as we scroll down.  Make sure that it is always visible.   You can see an example of this  in the video and in the screenshot at 1200px when scrolled */
-
-    /* HOW TO MAKE IT STOP OVERLAPPING TEXT? */
-    header:first-of-type {
-        position: fixed;
-        top: 0;
-        width: 100%;
+    body > header {
+        position: sticky;
+        top: 0px;
     }
+    /* header:first-of-type {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+    } */
 
     main header:first-of-type {
         position: static;
@@ -136,7 +138,11 @@ solid 2px border using #45ADAD,
     .nav_links {
         display: flex;
         flex-direction: row;
-        align-content: space-between;
+        justify-content: space-around;
+    }
+
+    nav {
+        width: 100%;
     }
 
     /* Edit the pricing class so that the elements align along the bottom.   As long as it aligns along the bottom we don't care if the cards aren't the same height */
