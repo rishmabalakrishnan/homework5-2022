@@ -32,12 +32,11 @@ header {
     align-items: center;
 }
 
-/* Edit the css for the header tag (all instances) to use flex to match our example */
+/* Edit the css for the nav_links class to use flex to match our example. Do not modify the list items or the links - modify the nav_links class to use flex */
 /* (styling is already correct, so you can skip this */
 
 /* Style the links so that they have the same color even after they have been visited */
-a:visited {
-    /* color: inherit; */
+.nav_links a:visited {
     color: blue;
 }
 
@@ -63,12 +62,17 @@ solid 2px border using #45ADAD,
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     flex-basis: 450px;
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Edit the css for the pricing class to match our example.  You should use flex and the cards should be centered both horizontally and vertically */
 
 .pricing {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -99,6 +103,7 @@ solid 2px border using #45ADAD,
 
     /* Edit the css for the pricing and card classes to match our example.  Part of achieving this is by using a flex-property to specify a “size” of 275px.  Notice that the elements do not have the same height, but do have the same width */
     .pricing, .card {
+        flex-direction: row;
         flex-basis: 275px;
     }
 
@@ -107,15 +112,10 @@ solid 2px border using #45ADAD,
         position: sticky;
         top: 0px;
     }
-    /* header:first-of-type {
-        position: fixed;
-        top: 0px;
-        width: 100%;
-    } */
 
-    main header:first-of-type {
+    /* main header:first-of-type {
         position: static;
-    }
+    } */
 }
 
 /* The following specifications are for when the user prefers reduced motion */
@@ -148,6 +148,7 @@ solid 2px border using #45ADAD,
 
     /* Edit the pricing class so that the elements align along the bottom.   As long as it aligns along the bottom we don't care if the cards aren't the same height */
     .pricing {
+        flex-direction: row;
         align-items: flex-end;
     }
 
