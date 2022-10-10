@@ -62,18 +62,18 @@ solid 2px border using #45ADAD,
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     flex-basis: 450px;
-    width: 450px;
-    flex-direction: column;
+    /* flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 /* Edit the css for the pricing class to match our example.  You should use flex and the cards should be centered both horizontally and vertically */
 
 .pricing {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: row wrap;
+    /* flex-direction: column;
+    align-items: center; */
     justify-content: center;
 }
 
