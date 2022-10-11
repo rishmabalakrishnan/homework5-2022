@@ -62,20 +62,35 @@ solid 2px border using #45ADAD,
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     flex-basis: 450px;
+
+}
+
+/* .card {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    flex-basis: 450px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* Edit the css for the pricing class to match our example.  You should use flex and the cards should be centered both horizontally and vertically */
 
 .pricing {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .pricing {
+    display: flex;
     flex-flow: row wrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+} */
 
 /* Style the images in the gallery class.  These elements will have a solid 10px border with a color of #50C7C7, 10px margin on all four sides and a width of 300px */
 .gallery img {
@@ -149,6 +164,7 @@ solid 2px border using #45ADAD,
     /* Edit the pricing class so that the elements align along the bottom.   As long as it aligns along the bottom we don't care if the cards aren't the same height */
     .pricing {
         flex-direction: row;
+        flex-wrap: nowrap;
         align-items: flex-end;
     }
 
